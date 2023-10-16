@@ -23,6 +23,9 @@ public class SinglyLinkedList<E>{
         public String toString(){
             return (String) element;
         }
+
+
+
     }
     // instance variables of the SinglyLinkedList
     private Node<E> head = null;    // head node of the list (or null if empty)
@@ -68,21 +71,7 @@ public class SinglyLinkedList<E>{
         return s;
     }
 
-    /* Implemente un metodo que dada una lsita enlazada de enteros genere otra lista de enteros con
-    *  solamente los elementos que almacenan un dato impar*/
 
-    //Este va en otra clase y se manda a llamar a un main
-    public SinglyLinkedList<Integer> eliminarPares(SinglyLinkedList<Integer>listaOr){
-        SinglyLinkedList<Integer> nuevo = new SinglyLinkedList<>();
-        Node<Integer> n = listaOr.first();
-        while(n !=null){
-            if(n.getElement() % 2 == 1){
-                nuevo.addLast(n.getElement());
-                n = n.getNext();
-            }
-        }return nuevo;
-
-    }
 
     public static void main(String[]args){
         Random ran = new Random();
