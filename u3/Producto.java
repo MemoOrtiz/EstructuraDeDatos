@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Producto {
     private int clave;
     private String descripcion;
@@ -40,5 +42,18 @@ public class Producto {
                 ", descripcion='" + descripcion + '\'' +
                 ", precio=" + precio +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Producto producto = (Producto) o;
+        return clave == producto.clave && Double.compare(precio, producto.precio) == 0 && Objects.equals(descripcion, producto.descripcion);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(clave, descripcion, precio);
     }
 }

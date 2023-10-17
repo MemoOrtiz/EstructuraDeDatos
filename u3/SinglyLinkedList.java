@@ -65,6 +65,7 @@ public class SinglyLinkedList<E>{
         String s = "";
         Node<E> n =head;
         while(n!=null){
+
             s+= n.getElement().toString()+ ", ";
             n = n.getNext();
         }
