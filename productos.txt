@@ -5,4 +5,3 @@
 6231,Pantalon,341.87
 1,Leche,28.23
 6,Regla,5
-
