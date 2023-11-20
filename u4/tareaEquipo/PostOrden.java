@@ -1,4 +1,4 @@
-package unidad4_arbolesbinarios;
+package u4.tareaEquipo;
 
 public class PostOrden<E> extends AbstractPrePostVisitor<E> {
 	private Visitor<E> visitor;

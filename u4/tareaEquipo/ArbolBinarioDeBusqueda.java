@@ -1,11 +1,14 @@
-package unidad4_arbolesbinarios;
+package u4.tareaEquipo;
 
 public class ArbolBinarioDeBusqueda<E> extends ArbolBinario<E> {
+
 	private ArbolBinarioDeBusqueda<E> getABBizq(){
+
 		return (ArbolBinarioDeBusqueda<E>)getIzq();
 	}
 	
 	private ArbolBinarioDeBusqueda<E> getABBder(){
+
 		return (ArbolBinarioDeBusqueda<E>)getDer();
 	}
 	

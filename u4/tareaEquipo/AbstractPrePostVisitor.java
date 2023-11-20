@@ -1,4 +1,4 @@
-package unidad4_arbolesbinarios;
+package u4.tareaEquipo;
 
 public abstract class AbstractPrePostVisitor<E> implements PrePostVisitor<E	> {
 	public void preVisit(E e) {

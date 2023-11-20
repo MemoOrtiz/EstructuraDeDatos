@@ -1,4 +1,4 @@
-package unidad4_arbolesbinarios;
+package u4.tareaEquipo;
 
 public interface PrePostVisitor<E> {
 	void preVisit(E e);
